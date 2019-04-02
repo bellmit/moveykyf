@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PharmacyMessage</string>
+    <string name="update_download_finish">下载完成</string>
+    <string name="update_download_start">开始下载</string>
+    <string name="update_download_failed">下载失败</string>
+    <string name="update_download_progressing">正在下载</string>
+    <string name="setting_screen_show">屏幕常亮</string>
+    <string name="setting_notif_vib">震动提醒</string>
+    <string name="setting_voice">声音提示</string>
+    <string name="setting_use_agency">机构名称</string>
+    <string name="setting_use_ID">机构ID</string>
+    <string name="setting_ip">服务端IP</string>
+    <string name="setting_ip_hint">IP地址，如192.168.1.1</string>
+    <string name="setting_port">端口号</string>
+    <string name="setting_port_hint">端口号，如8080</string>
+    <string name="setting_valid_service">验证服务</string>
+    <string name="setting_ssid">SSID</string>
+    <string name="setting_ssid_hint">WI-FI连接名</string>
+    <string name="setting_ssid_password">SSID密码</string>
+    <string name="setting_ssid_password_hint">WIFI连接密码</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="in_storage">药库入库</string>
+    <string name="out_storage">药库出库</string>
+    <string name="barcode_empty_tip">条码为空</string>
+    <string name="cannot_analyse_barcode_whithout_set_rule">解析条码失败</string>
+    <string name="closeRukuActivity">closeRukuActivity</string>
+    <string name="refreshRukuHistoryFragment">refreshRukuHistoryFragment</string>
+</resources>

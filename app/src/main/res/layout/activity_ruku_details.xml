@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.RukuDetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_f6f6f6">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dp_10"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <TextView
+                style="@style/text_type3"
+                android:text="入库方式 :" />
+            <TextView
+                    android:id="@+id/tv_ruku_way"
+                    style="@style/text_type2"
+                    android:text="购入"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    />
+                <TextView
+                    style="@style/text_type3"
+                    android:text="采购日期 :" />
+                <TextView
+                    android:id="@+id/tv_caigou_time"
+                    style="@style/text_type1"
+                    android:text="2017-07-04"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                >
+                <TextView
+                    style="@style/text_type3"
+                    android:text="购入方式 :" />
+                <TextView
+                    android:id="@+id/tv_buy_way"
+                    style="@style/text_type2"
+                    android:text="货到票到"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    />
+                <TextView
+                    style="@style/text_type3"
+                    android:text="附单据数 :" />
+                <TextView
+                    android:id="@+id/tv_fudan_num"
+                    style="@style/text_type1"
+                    android:text="3"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview_history_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_15"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</layout>

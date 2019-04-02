@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/rl_root_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/common_title"
+            layout="@layout/common_back_title" />
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--加载失败-->
+            <LinearLayout
+                android:id="@+id/ll_error_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_err"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:src="@mipmap/netfailure" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:text="加载失败,点击重试"
+                    android:textSize="30px" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_nodata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/color_EFEFF4"
+                android:paddingBottom="@dimen/dp_30"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tv_nodata_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="暂无数据显示"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

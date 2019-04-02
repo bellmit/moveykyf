@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.LoginSettingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_f6f6f6"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="51.0dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_screen_show" />
+
+            <Switch
+                android:id="@+id/setting_transfuse_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:thumb="@drawable/shape_switch_o_thumb_off"
+                android:track="@drawable/selector_switch_o_track"
+                app:showText="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="51.0dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_notif_vib" />
+
+            <Switch
+                android:id="@+id/setting_vib_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:thumb="@drawable/shape_switch_o_thumb_off"
+                android:track="@drawable/selector_switch_o_track"
+                app:showText="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="51.0dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_voice" />
+
+            <Switch
+                android:id="@+id/setting_log_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/shape_switch_o_thumb_off"
+                app:showText="false"
+                android:track="@drawable/selector_switch_o_track"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_use_agency"/>
+
+            <EditText
+                android:id="@+id/setting_agency_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="登陆机构名称"
+                android:background="@drawable/bg_input"
+                android:textSize="@dimen/sp_14"
+                android:padding="@dimen/dp_5"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_use_ID"/>
+
+            <EditText
+                android:id="@+id/setting_agency_id_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="登陆机构ID"
+                android:background="@drawable/bg_input"
+                android:textSize="@dimen/sp_14"
+                android:padding="@dimen/dp_5"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_ip"/>
+
+            <EditText
+                android:id="@+id/setting_set_ip_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/bg_input"
+                android:hint="@string/setting_ip_hint"
+                android:textSize="@dimen/sp_14"
+                android:padding="@dimen/dp_5"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_port"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical">
+            <EditText
+                android:id="@+id/setting_set_port_edit"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:hint="@string/setting_port_hint"
+                android:textSize="@dimen/sp_14"
+                android:padding="@dimen/dp_5"/>
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:text="@string/setting_valid_service"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_ssid"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+            <EditText
+                android:id="@+id/setting_ssid_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/setting_ssid_hint"
+                android:background="@drawable/bg_input"
+                android:textSize="@dimen/sp_14"
+                android:padding="@dimen/dp_5"/>
+            <ImageView
+                android:id="@+id/setting_scan_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_wifi_p"
+                android:padding="@dimen/dp_3"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_ssid_password"/>
+
+            <EditText
+                android:id="@+id/setting_set_ssid_password_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/bg_input"
+                android:hint="@string/setting_ssid_password_hint"
+                android:textSize="@dimen/sp_14"
+                android:padding="@dimen/dp_5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
